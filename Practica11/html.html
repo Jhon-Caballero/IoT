@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Servicios a la oficina de reparto</title>
+    <!-- Vincula el archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <p>Órdenes recibidas para el despacho</p>
+    <img src="https://i0.wp.com/diariolaregion.net/wp-content/uploads/2013/07/LG-Door-in-Door.jpg">
+    <a href="https://docs.google.com/document/d/1Qz0jqi1lAtIz6wdGIMiG2fTg630jVtwW_uL5553KlFw/edit" target="_blank">RegistrosIoT</a>
+</div>
+<!-- Agregar el iframe al final de la página -->
+<iframe id="dataFrame" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTV7KBq_nTXy0p7H6q-Mlb40P
+uUc4Ta2Dermtvwshcz0rq7Q1_l2zpIFJgQ8FFc-hIJzTXaPkVDU686/pubhtml?widget=true&
+amp;headers=false" width="250%"></iframe>
+<!-- Incluye el enlace a Bootstrap JS (opcional) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Función para recargar el iframe cada 10 segundos
+    function refreshIframe() {
+        var iframe = document.getElementById('dataFrame');
+        iframe.src = iframe.src;
+    }
+
+    // Agregar un temporizador para refrescar cada 10 segundos
+    var refreshInterval = setInterval(refreshIframe, 1000);
+</script>
+</body>
+</html>
+
